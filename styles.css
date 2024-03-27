@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Unique';
-  src: url('OpenType-PS/Unique-Bold.otf') format('opentype');
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-  font-size: 100px;
+
+  
 }
+
 
 html {
   -webkit-box-sizing: border-box;
@@ -16,8 +16,8 @@ html {
 }
 
 h1 {
-    font-size: 100px;
-    font-family: 'Unique';
+    font-size: 140px;
+    font-family: 'Geneva';
 }
 
 *, *:before, *:after {
@@ -26,17 +26,67 @@ h1 {
   box-sizing: inherit;
 }
 
+
 body {
     height: 100%;   
     width: 100%;
+    cursor: url('cursor.png'), auto;
+    background-image: url('background.png'); /* Replace 'your-background-image.jpg' with your image file */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #5796e2; 
+    background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.container {
+  margin: 100px auto;
+  text-align: center;
+  font-size: 24px;
+  cursor: default;
 }
 
 section {
-    width: 33.33%;
-    height: 100%;
-    border: 1px solid purple;
-    text-align: center;
+  width: 33.33%;
+  height: 100%;
+  /* border: 1px solid purple; */
+  text-align: center;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  position: relative;
 }
+.left-section {
+  position: relative; /* Ensure the container is relatively positioned */
+  display: flex; /* Add this line */
+  justify-content: flex-end; /* Add this line */
+}
+
+.left-section img {
+  width: auto; /* Ensure the non-hover image takes up the full width of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the image's aspect ratio */
+  background-size: contain; /* Prevents stretching and ensures the entire image is visible */
+  background-repeat: no-repeat;
+  position: absolute; /* Position the non-hover image absolutely */
+  bottom: 0; /* Align the non-hover image to the bottom */
+  left: 0;
+  z-index: 1;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Geneva';
+}
+
 
 .container {
     display: flex;
@@ -48,6 +98,63 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: bottom;
 }
+
+
+  img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+    right: 50%;
+    bottom: 0;
+  }
+  .left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+ 
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.right-section {
+  position: relative; /* Ensure the container is relatively positioned */
+  display: flex; /* Add this line */
+  justify-content: flex-end; /* Add this line */
+}
+
+.right-section img {
+  width: auto; /* Ensure the non-hover image takes up the full width of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the image's aspect ratio */
+  background-size: contain; /* Prevents stretching and ensures the entire image is visible */
+  background-repeat: no-repeat;
+  position: absolute; /* Position the non-hover image absolutely */
+  bottom: 0; /* Align the non-hover image to the bottom */
+  left: 0;
+  z-index: 1;
+}
+
+
+
+
+  
+ 
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+
 
