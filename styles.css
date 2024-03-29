@@ -1,6 +1,9 @@
 @font-face {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+  font-family: 'Migha';
+  src: url('migha_display/Migha_Display/Normal/Migha-Bold.otf') format(opentype);
+  src: url('migha_display/Migha_Display/Normal/Migha-Regular.otf') format(opentype);
+  src: url('migha_display/Migha_Display/Normal/Migha-Slant.otf') format(opentype);
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -10,17 +13,32 @@ html, body {
   padding: 0;
   overflow: hidden; /* Prevent scrolling */
 }
-
+h1{
+  font-size: 100px;
+  font-family: 'Migha';
+  font-style: 'Migha-Slant';
+}
+#startGameButton{
+  font-size: 50px;
+  font-family: 'Migha';
+  font-style: 'Migha-Regular';
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: 'cursor.png';
-  background-image: url('background.png');
+  background-image: url('backgroundtryagain.png');
   background-size: cover;
   background-position: center;
-  color: #5796e2;
+  color: black;
   background-repeat: no-repeat;
+  
+  cursor: url('cursor_again_small.png'), auto;
+}
+
+#startGameButton:hover,
+#startGameButton:active {
+  cursor: url('cursor_my_design.png'), auto;
 }
 
 .container {
@@ -95,6 +113,3 @@ img.replacement {
 
   
   
-
-
-
