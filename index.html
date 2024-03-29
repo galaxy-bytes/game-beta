@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dress Up Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles copy.css">
 </head>
 <body>
     <div class="container">
@@ -14,13 +14,25 @@
         </section>
         <section class="middle-section">
             <h1>closet h0arder</h1>
-            <div onclick="startGame()">Start Game</div>
-            <div onclick="openSettings()">Settings</div>
+            <div onclick="startGame()" id="startGameButton">Start Game</div>
+            <div onclick="openSettings()" id="startGameButton">Settings</div>
         </section>
         <section class="right-section image-container">
             <img src="girl on right copy.png" alt="girl with pixie cut">
             <img src="girl on right hover copy.png" alt="girl with bob" class="replacement">
         </section>
     </div>
+</body>
+
+<script>
+    function startGame() {
+        // Redirect to the new page
+        window.location.href = "new_page.html";
+    }
+
+    function openSettings() {
+        // Add functionality for opening settings
+    }
+</script>
 </body>
 </html>
