@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="start_game.css">
+    <!-- You can link additional stylesheets or scripts here if needed -->
+</head>
+<body>
+    <h1>Choose game mode</h1>
+    <div class="back-container">
+        <a href="danzes trial.html" class="back-button">
+            <img src="closed_closet.png" alt="Back to Homepage" class="closet-image"> Exit the Closet
+            <img src="opened_closet.png" alt="closet" class="replacement closet-image">
+        </a>
+    </div>
+    
+    
+    <div class="container">
+        <div class="box">
+            <div onclick="storyMode()" id="story_modebutton">Story Mode</div>
+            <span class="description">Follow along with a character and help them clean their closet to suit their new style</span>
+        </div>
+        <div class="box">
+            <div onclick="casualMode()" id="casual_modebutton">Casual Mode</div>
+            <span class="description">Dress up any character anyway you want</span>
+        
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function storyMode() {
+        // Redirect to the new page
+        window.location.href = "story_mode.html";
+       
+
+    }
+    function casualMode() {
+        // Add functionality for opening settings
+        window.location.href = "casual_mode.html";
+        
+    }
+    </script>
