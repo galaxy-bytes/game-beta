@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Migha';
+    src: url('migha_display/Migha_Display/Normal/Migha-Bold.otf') format(opentype);
+    src: url('migha_display/Migha_Display/Normal/Migha-Regular.otf') format(opentype);
+    src: url('migha_display/Migha_Display/Normal/Migha-Slant.otf') format(opentype);
+    src: url('migha_display/Migha_Display/Normal/Migha-BlackCNTR.otf') format(opentype);
+    src: url('migha_display/Migha_Display/Migha_Variable/Migha_Variable.ttf') format(truetype); 
+    src: url('migha_display/Migha_Display/Condensed/Migha-Condensed.otf') format(opentype);
+    src: url('migha_display/Migha_Display/Condensed/Migha-BlackCondensed.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moche';
+    src: url('Moche/OTF/Moche-Bold.otf');
+    src: url('Moche/OTF/Moche-Light.otf');
+    src: url('Moche/OTF/Moche-Regular.otf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    justify-content: center;
+    align-items: center;
+    background-image: url('backgroundtryagain.png');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    background-repeat: no-repeat;
+    font-family: 'Migha', sans-serif; /* Use a generic fallback font */
+    cursor: url('cursor_again_small.png'), auto;
+}
+
+
+h1 {
+    margin-bottom: 35px; /* Adjust margin to move the heading down */
+    font-size: 50px;
+    font-style: 'Migha-BlackCNTR';
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Arrange boxes with space between */
+    width: 32%; /* Adjust width as needed */
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: #e3c6d0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: inherit;
+    align-items:center;
+    margin: 10px;
+    font-size: 30px;
+    font-style: 'Migha-Condensed';
+    flex-direction: column; 
+    padding: 12px;
+}
+
+
+#story_modebutton,#casual_modebutton {
+    font-style: 'Migha-Condensed', sans-serif; /* Specify the font family for mode */
+    margin-bottom: 10px;
+    justify-content: flex-start
+}
+
+.description {
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Moche';
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box:hover,#story_modebutton:hover, #casual_modebutton:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    color: #D2F1E4;
+    background-color: #3C0000;
+}
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #e3c6d0;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.back-container {
+    position: fixed; /* Position the container relative to the viewport */
+    bottom: 0; /* Align the container to the bottom */
+    left: 10px; /* Align the container to the left */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    vertical-align: middle;
+
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+}
+
+.closet-image{
+    width: 65px; /* Set the width of the image */
+    height: auto;
+    vertical-align: middle; /* Align the image vertically with the button */
+    margin-left: .5px; /* Add some spacing between the image and the button */
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+
+.back-button:hover {
+    background-color: #3C0000;
+    color: #fff;
+}
+
+.replacement {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+.back-button:hover .closet-image {
+    opacity: 0;
+}
+
+.back-button:hover .replacement {
+    display: block;
+}
+  .replacement closet-image {
+    display: none;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+
+  }
+
+   
