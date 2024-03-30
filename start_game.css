@@ -81,7 +81,7 @@ h1 {
     text-align: center;
     margin-bottom: 100px;
 }
-.box:hover,#story_modebutton:hover, #casual_modebutton:hover{
+.box:hover,#story_modebutton:hover, #casual_modebutton:hover,.description:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
     color: #D2F1E4;
